@@ -2,12 +2,12 @@
 set -euo pipefail
 
 # ===== Настройки (можно подправить) =====
-MIN_MINUTES=18          # минимум интервала
-MAX_MINUTES=19          # максимум интервала
-TONE_HZ=45              # низкий тон, едва заметный
+MIN_MINUTES=10          # минимум интервала
+MAX_MINUTES=15          # максимум интервала
+TONE_HZ=40              # низкий тон, едва заметный
 TONE_DURATION=0.12      # длительность сигнала в секундах
 TONE_VOLUME=0.015       # амплитуда WAV (очень тихо)
-AFPLAY_VOLUME=0.03      # дополнительное снижение громкости afplay (0.0..1.0)
+AFPLAY_VOLUME=0.5       # дополнительное снижение громкости afplay (0.0..1.0)
 
 # ===== Временный WAV =====
 WAV_FILE="$(mktemp /tmp/speaker-keepalive.XXXXXX.wav)"
